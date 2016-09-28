@@ -3,3 +3,13 @@
 	width: 100%;
 }
 
+.leaflet-draw-draw-rectangle {
+	display: none !important; 
+}
+
+.leaflet-draw-draw-marker {
+	display: none !important; 
+}
+.leaflet-draw-draw-circle {
+	display: none !important; 
+}

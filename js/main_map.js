@@ -11,16 +11,15 @@ $(document).ready(function(){
 
 	var drawControl = new L.Control.Draw({
 		draw: {
-			// position: 'topleft',
 			polygon: {
 				title: 'Joonista polügoon!',
 				allowIntersection: false,
 				drawError: {
-					color: '#b00b00',
+					color: '#998ec3',
 					timeout: 1000
 				},
 				shapeOptions: {
-					color: '#bada55'
+					color: '#f1a340'
 				},
 				showArea: true
 			},

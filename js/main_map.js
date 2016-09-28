@@ -16,11 +16,12 @@ $(document).ready(function(){
 				allowIntersection: false,
 				drawError: {
 					color: '#998ec3',
-					timeout: 1000
+					timeout: 100
 				},
 				shapeOptions: {
 					color: '#f1a340'
 				},
+				metric: true,
 				showArea: true
 			},
 			polyline: {
@@ -35,7 +36,7 @@ $(document).ready(function(){
 			layer = e.layer;
 
 		if (type === 'polygon') {
-			layer.bindPopup('Polügoon!');
+			layer.bindPopup('Sees');
 		}
 
 		drawnItems.addLayer(layer);

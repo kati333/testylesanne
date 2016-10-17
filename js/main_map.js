@@ -73,23 +73,20 @@ $(document).ready(function(){
 
 			// populate the list of vertices_x
 			for (var i = 0; i < layer._latlngs.length; i++){
-				// console.log(layer._latlngs[i].lat);
 				vertices_y.push(layer._latlngs[i].lat);
 			}
-			// console.log(vertices_x);
+
 			// populate the list of vertices_y
 			for (var i = 0; i < layer._latlngs.length; i++){
-				// console.log(layer._latlngs[i].lat);
 				vertices_x.push(layer._latlngs[i].lng);
 			}
-			// console.log(vertices_y);
+
 			var check = is_in_polygon(pnts_in_polygon,vertices_x,vertices_y,longitude,latitude);
-			console.log(check);
 
 			popup.setLatLng(e.latlng); 
 			if (check === true) {
 				popup.setContent('Inside');
-			} if (check === false) {
+			} else if (check === false) {
 				popup.setContent('Outside')
 			}
 			popup.openOn(map); 
